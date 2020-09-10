@@ -67,9 +67,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/tokyo.JPG)
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/tokyo2.JPG)
 
-**Breakdown-schets(en):**
+**Breakdown-schetsen:**
 
 ![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown-01.jpg)
 ![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown-02.jpg)
 ![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown-03.jpg)
 ![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown-04.jpg)
+
+**Verbeterde Breakdown-schetsen:**
+
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/breakdown-02.jpg)
