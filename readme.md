@@ -78,3 +78,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ![-Verbeterde Breakdown-schetsen van een of beide pagina's van de site die je gaat maken-](images/DeBreakdownschets2-03.jpg)
 ![-Verbeterde Breakdown-schetsen van een of beide pagina's van de site die je gaat maken-](images/DeBreakdownschets2-04.jpg)
+
+**Opnieuw verbeterde Breakdown-schetsen:**
+
+![-Opnieuw verbeterde Breakdown-schetsen van een of beide pagina's van de site die je gaat maken-](images/DeBreakdownschets3-03.jpg)
+![-Opnieuw verbeterde Breakdown-schetsen van een of beide pagina's van de site die je gaat maken-](images/DeBreakdownschets3-04.jpg)
