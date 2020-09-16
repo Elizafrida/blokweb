@@ -16,15 +16,60 @@ body {
 	color: white;
 }
 
+p {
+	font-family: 'Karla', sans-serif;
+}
+
+main p {
+	font-size: 0.8em;
+	line-height: 17px;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 3.2em;
+	line-height: 52px;
+}
+
+main > article {
+	background-color: #F7F3F3;
+	color: #ff5642;
+	padding: 19% 3%;
+}
+
+main > article > header > p {
+	padding-bottom: 5%;
+}
+
+/*/// ALLE FOTO'S AFMETING ///*/
+img {
+	width: 100%;
+}
+
+main img {
+	padding: 12% 0 6% 0;
+}
 
 
-/*//////////////////// NAVIGATIE //////////////////////////*/
 
+
+/*////////////////////////// HEADER ///////////////////////////////////*/
+
+/*/// PLAATSING NAV BOVEN & MIDDEN ///*/
+nav {
+	position: fixed;
+	z-index: 2;
+	margin-top: 0.35em;
+	top: 0.47em;
+	left: calc(50% - 8.5em);
+}
+
+/*/// PLAATSING NAV LINKS ///*/
 nav ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 70%;
+	width: 17em;
 	left: 50%;
 }
 
@@ -32,18 +77,78 @@ ul li {
 	list-style-type: none;
 }
 
+/*/// FACEBOOK & INSTAGRAM IMAGE ///*/
+nav > ul > li > a > img {
+	display: inline;
+	width: 1.3em;
+}
+
+/*/// STYLING VAN DE LINKS ///*/
 ul li a {
 	text-decoration: none;
 	font-family: 'Playfair Display', serif;
 	color: white;
-	font-size: 0.91em;
-	line-height: 22px;
+	font-size: 0.98em;
+	line-height: 25px;
 }
 
-
-
-
-
+/*/// LOGO PLAATSING ///*/
 body > header:first-of-type > img {
-	width: 3em;
+	position: fixed;
+	z-index: 2;
+	width: 2.2em;
+	margin-left: 0.6em;
+	margin-top: 0.35em;
 }
+
+/*/// PLAATSING FOTO ONDER NAV ///*/
+header:first-of-type > section:first-of-type {
+	position: relative;
+	height: 115vh;
+}
+
+header:first-of-type > section:first-of-type > img:first-of-type {
+	position: absolute;
+    transform: translate(-50%, -50%);
+    top: 44%;
+    left: 50%;
+    width: 80%;
+}
+
+/*/// BANNER ///*/
+header:first-of-type > section:first-of-type > banner {
+	position: absolute;
+	font-family: 'Playfair Display', serif;
+	font-size: 3.9em;
+	color: #ffdf00;
+	top: 45%;
+	width: 97%;
+	line-height: 82px;
+	text-align: right;
+}
+
+/* SPAN */
+header:first-of-type > section:first-of-type > banner > span {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.5em;
+	letter-spacing: -4px;
+	margin-right: 19%;
+}
+
+
+
+/*////////////////////////// MAIN ///////////////////////////////////*/
+
+
+
+
+
+
+
+
+/*main img {
+	position: absolute;
+	transform: translate(-50%, -50%);
+    top: 44%;
+    left: 50%;
+}*/

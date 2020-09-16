@@ -38,19 +38,21 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Het schrijven van de HTML ging best goed, maar toen ik begon met het positioneren van elementen in CSS ben ik het wel erg lastig gaan vinden. Ik vroeg mij af wanneer ik bijvoorbeeld flexbox moest gebruiken en wanneer absoluut positioneren etc. Met de hulp van klasgenoten en goed googlen heb ik uiteindelijk een goed begin kunnen maken aan mijn website. 
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![screenshots van hoe ver ik ben](images/voortgang1-1.png)
+![screenshots van hoe ver ik ben](images/voortgang1-2.png)
+![screenshots van hoe ver ik ben](images/voortgang1-3.png)
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+Woensdag 16 september: van 11:00-16:00 op teams aan het project gewerkt
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Met de hulp van mijn klasgenoten heb ik een aantal dingen centraal kunnen positioneren. Met bijvoorbeeld 'transform: translate(-50%, -50%);'
 
 
 
