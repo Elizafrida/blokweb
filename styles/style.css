@@ -1,5 +1,49 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+box-sizing:border-box;
+padding: 0;
+margin: 0;
+border: 0;
+outline: 0;
 }
 
+
+
+/*///////////////////// ALGEMEEN ///////////////////////////*/
+
+body {
+	background-color: black;
+	color: white;
+}
+
+
+
+/*//////////////////// NAVIGATIE //////////////////////////*/
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 70%;
+	left: 50%;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+ul li a {
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+	color: white;
+	font-size: 0.91em;
+	line-height: 22px;
+}
+
+
+
+
+
+body > header:first-of-type > img {
+	width: 3em;
+}
