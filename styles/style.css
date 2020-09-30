@@ -9,7 +9,7 @@ outline: 0;
 
 
 
-/*///////////////////// ALGEMEEN ///////////////////////////*/
+/*////////////////////////////////////////////// ALGEMEEN ///////////////////////////////////////////////////*/
 
 body {
 	background-color: black;
@@ -20,21 +20,29 @@ p {
 	font-family: 'Karla', sans-serif;
 }
 
+
 main p {
-	font-size: 0.8em;
-	line-height: 17px;
+	font-size: 0.95em;
+	line-height: 1.4;
+}
+
+main p span {
+	padding-top: 1em;
+	display: block;
+	text-decoration: underline;
 }
 
 h2 {
 	font-family: 'Playfair Display', serif;
-	font-size: 3.2em;
-	line-height: 52px;
+	font-size: 3.25em;
+	line-height: 1.03;
 }
 
+/*// GROOTTE & KLEUR ARTICLES //*/
 main > article {
 	background-color: #F7F3F3;
 	color: #ff5642;
-	padding: 19% 3%;
+	padding: 20% 3%;
 }
 
 main > article > header > p {
@@ -53,7 +61,7 @@ main img {
 
 
 
-/*////////////////////////// HEADER ///////////////////////////////////*/
+/*////////////////////////////////////////// EERSTE HEADER ///////////////////////////////////////////////*/
 
 /*/// PLAATSING NAV BOVEN & MIDDEN ///*/
 nav {
@@ -64,23 +72,23 @@ nav {
 	left: calc(50% - 8.5em);
 }
 
-/*/// PLAATSING NAV LINKS ///*/
+/*/// PLAATSING LINKS NAAST ELKAAR IN DE NAV ///*/
 nav ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 17em;
-	left: 50%;
 }
 
 ul li {
 	list-style-type: none;
 }
 
-/*/// FACEBOOK & INSTAGRAM IMAGE ///*/
+/*/// FACEBOOK & INSTAGRAM ICONS ///*/
 nav > ul > li > a > img {
 	display: inline;
 	width: 1.3em;
+	box-shadow: 0.5px 0.5px 3px #000000;
 }
 
 /*/// STYLING VAN DE LINKS ///*/
@@ -90,6 +98,7 @@ ul li a {
 	color: white;
 	font-size: 0.98em;
 	line-height: 25px;
+	text-shadow: 0.5px 0.5px 3px #000000;
 }
 
 /*/// LOGO PLAATSING ///*/
@@ -109,27 +118,30 @@ header:first-of-type > section:first-of-type {
 
 header:first-of-type > section:first-of-type > img:first-of-type {
 	position: absolute;
+	width: 80%;
     transform: translate(-50%, -50%);
     top: 44%;
     left: 50%;
-    width: 80%;
 }
 
-/*/// BANNER ///*/
+/*/// BANNER TEKST ///*/
 header:first-of-type > section:first-of-type > banner {
 	position: absolute;
 	font-family: 'Playfair Display', serif;
 	font-size: 3.9em;
 	color: #ffdf00;
 	top: 45%;
-	width: 97%;
+	width: 100%;
+	padding-right: 3%;
 	line-height: 82px;
 	text-align: right;
+	text-shadow: 0.5px 0 1px #000000;
 }
 
-/* SPAN */
+/*/// SPAN IN BANNER ///*/
 header:first-of-type > section:first-of-type > banner > span {
 	font-family: 'Roboto Condensed', sans-serif;
+	font-style: italic;
 	font-size: 1.5em;
 	letter-spacing: -4px;
 	margin-right: 19%;
@@ -137,18 +149,127 @@ header:first-of-type > section:first-of-type > banner > span {
 
 
 
-/*////////////////////////// MAIN ///////////////////////////////////*/
 
+/*////////////////////////////////////////////// MAIN > ASIDES ///////////////////////////////////////////////////*/
 
+/*// GROOTTE VAN ASIDES //*/
+main > aside {
+	position: relative;
+	height: 102vh;
+}
 
-
-
-
-
-
-/*main img {
+/*// PLAATSING FOTO'S ASIDE //*/
+main > aside > img {
 	position: absolute;
+	width: 80%;
 	transform: translate(-50%, -50%);
-    top: 44%;
-    left: 50%;
-}*/
+	top: 47%;
+	left: 50%;
+}
+
+/*//////////////////////////// EERSTE ASIDE /////////////////////////////*/
+
+/*// TEKST EERSTE ASIDE //*/
+main > aside:first-of-type > p {
+	position: absolute;
+	font-size: 2.9em;
+	letter-spacing: -2px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-style: italic;
+	color: #ffdf00;
+	width: 100%;
+	text-align: center;
+	top: 35%;
+	text-shadow: 0.5px 0 1px #000000;
+}
+
+/*// LINKS IN TEKST EERSTE ASIDE  //*/
+main > aside:first-of-type > p > a {
+	display: block;
+	text-decoration: none;
+	font-size: 0.82em;
+	letter-spacing: 0.5px;
+	color: white;
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	padding-top: 10%;
+	text-align: left;
+	padding-left: 3%;
+}
+
+/*// ANDERE OPMAAK SPAN 'FACEBOOK' //*/
+main > aside:first-of-type > p > a:nth-of-type(2) {
+	font-style: italic;
+	letter-spacing: -1px;
+	padding-top: 4%;
+	text-align: right;
+	padding-right: 3%;
+}
+
+/*//////////////////////////// TWEEDE ASIDE /////////////////////////////*/
+
+/*// TEKST TWEEDE ASIDE //*/
+main > aside:nth-of-type(2) > p {
+	position: absolute;
+	font-size: 3.14em;
+	letter-spacing: -2px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #ffdf00;
+	width: 100%;
+	text-align: center;
+	top: 27%;
+	line-height: 0.88;
+	text-shadow: 0.5px 0 1px #000000;
+}
+
+/*// ANDERE OPMAAK LINK 'AREA GUIDE' //*/
+main > aside:nth-of-type(2) > p > a {
+	text-decoration: none;
+	display: block;
+	color: white;
+	font-family: 'Playfair Display', serif;
+	font-size: 2.06em;
+	padding-bottom: 31%;
+}
+
+
+
+
+/*////////////////////////////////////////////// FOOTER ///////////////////////////////////////////////////*/
+
+/*// FLEX CONTAINER //*/
+footer {
+	background-color: #F7F3F3;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*// FLEX ITEMS //*/
+footer > p {
+	padding: 0 0 4% 3%;
+	color: black;
+	width: 100%;
+}
+
+footer > section {
+	width: 50%;
+	color: #ff5642;
+	font-size: 0.8em;
+	padding-left: 3%;
+}
+
+footer > section:nth-of-type(2), section:nth-of-type(4) {
+	padding-right: 3%;
+}
+
+footer > section:nth-of-type(3), section:nth-of-type(4) {
+	padding-top: 7%;
+}
+
+/*// ARTIKEL TITELS //*/
+footer > section > h3 {
+	padding-top: 2%;
+}
+
+
+
