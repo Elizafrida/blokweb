@@ -30,7 +30,29 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+In week 4 kwam ik niet echt toe aan mijn website, wel aan de oefeningen. In week 5 heb ik een flinke inhaalslag gemaakt en enorm veel kunnen doen. De twee pagina's zien er nu goed uit op mobiel. Er zijn nog wat kleine dingen die ik wil toevoegen en ik wil een poging doen tot het responsive maken van de website de komende weken.
+
+**Screenshot(s):**
+
+![screenshots van hoe ver ik ben](images/voortgang2-1.png)
+![screenshots van hoe ver ik ben](images/voortgang2-2.png)
+![screenshots van hoe ver ik ben](images/voortgang2-3.png)
+
+### Agenda voor meeting
+
+Donderdag 1 oktober
+
+### Verslag van meeting
+
+Dit zijn de dingen waar we vragen over hebben:
+- Carrousel (css/html of js, beste optie?)
+- Css image slider animation (Eliza)
+- Text responsive maken- fluid typografie of @mediaQueries?
+:hover bug (Jelle)
+- slider van tekst en dingen toevoegen in winkelmandje (Ysabella)
+
 
 
 
