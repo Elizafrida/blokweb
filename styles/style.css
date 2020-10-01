@@ -9,7 +9,7 @@ outline: 0;
 
 
 
-/*////////////////////////////////////////////// ALGEMEEN ///////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////// ALGEMEEN /////////////////////////////////////////////////////////*/
 
 body {
 	background-color: black;
@@ -20,6 +20,13 @@ p {
 	font-family: 'Karla', sans-serif;
 }
 
+a:hover {
+	color: #ff928a;
+}
+
+a:active {
+	color: #ff5642;
+}
 
 main p {
 	font-size: 0.95em;
@@ -61,7 +68,7 @@ main img {
 
 
 
-/*////////////////////////////////////////// EERSTE HEADER ///////////////////////////////////////////////*/
+/*/////////////////////////////////////////////// EERSTE HEADER ////////////////////////////////////////////////////////*/
 
 /*/// PLAATSING NAV BOVEN & MIDDEN ///*/
 nav {
@@ -102,7 +109,7 @@ ul li a {
 }
 
 /*/// LOGO PLAATSING ///*/
-body > header:first-of-type > img {
+body > header:first-of-type > a > img {
 	position: fixed;
 	z-index: 2;
 	width: 2.2em;
@@ -113,16 +120,93 @@ body > header:first-of-type > img {
 /*/// PLAATSING FOTO ONDER NAV ///*/
 header:first-of-type > section:first-of-type {
 	position: relative;
-	height: 115vh;
+	height: 90vh;
 }
 
 header:first-of-type > section:first-of-type > img:first-of-type {
 	position: absolute;
 	width: 80%;
     transform: translate(-50%, -50%);
-    top: 44%;
+    top: 50%;
     left: 50%;
 }
+
+/*////////////////////// SLIDESHOW FOTO'S ANIMATIE ////////////////////////////*/
+header:first-of-type > section:first-of-type > img:nth-of-type(2) {
+	position: absolute;
+	width: 80%;
+	transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation-name: slideshow;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+
+@keyframes slideshow {
+	0% {
+		opacity: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+header:first-of-type > section:first-of-type > img:nth-of-type(3) {
+	position: absolute;
+	width: 80%;
+	transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation-name: slideshow;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+
+@keyframes slideshow {
+	0% {
+		opacity: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+header:first-of-type > section:first-of-type > img:nth-of-type(4) {
+	position: absolute;
+	width: 80%;
+	transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation-name: slideshow;
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+
+@keyframes slideshow {
+	0% {
+		opacity: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 
 /*/// BANNER TEKST ///*/
 header:first-of-type > section:first-of-type > banner {
@@ -130,7 +214,7 @@ header:first-of-type > section:first-of-type > banner {
 	font-family: 'Playfair Display', serif;
 	font-size: 3.9em;
 	color: #ffdf00;
-	top: 45%;
+	top: 46%;
 	width: 100%;
 	padding-right: 3%;
 	line-height: 82px;
@@ -150,7 +234,7 @@ header:first-of-type > section:first-of-type > banner > span {
 
 
 
-/*////////////////////////////////////////////// MAIN > ASIDES ///////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////// MAIN > ASIDES /////////////////////////////////////////////////////*/
 
 /*// GROOTTE VAN ASIDES //*/
 main > aside {
@@ -158,7 +242,7 @@ main > aside {
 	height: 102vh;
 }
 
-/*// PLAATSING FOTO'S ASIDE //*/
+/*// PLAATSING FOTO'S ASIDES //*/
 main > aside > img {
 	position: absolute;
 	width: 80%;
@@ -183,7 +267,7 @@ main > aside:first-of-type > p {
 	text-shadow: 0.5px 0 1px #000000;
 }
 
-/*// LINKS IN TEKST EERSTE ASIDE  //*/
+/*// DE LINKS IN TEKST EERSTE ASIDE  //*/
 main > aside:first-of-type > p > a {
 	display: block;
 	text-decoration: none;
@@ -204,6 +288,15 @@ main > aside:first-of-type > p > a:nth-of-type(2) {
 	padding-top: 4%;
 	text-align: right;
 	padding-right: 3%;
+}
+
+/*// STATES VAN DE LINKS //*/
+main > aside:first-of-type > p > a:hover {
+	color: #ff928a;
+}
+
+main > aside:first-of-type > p > a:active {
+	color: #ef4033;
 }
 
 /*//////////////////////////// TWEEDE ASIDE /////////////////////////////*/
@@ -232,10 +325,19 @@ main > aside:nth-of-type(2) > p > a {
 	padding-bottom: 31%;
 }
 
+/*// STATES VAN DE LINKS //*/
+main > aside:nth-of-type(2) > p > a:hover {
+	color: #ff928a;
+}
+
+main > aside:nth-of-type(2) > p > a:active {
+	color: #ef4033;
+}
 
 
 
-/*////////////////////////////////////////////// FOOTER ///////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////// FOOTER ///////////////////////////////////////////////////////////*/
 
 /*// FLEX CONTAINER //*/
 footer {
@@ -253,23 +355,106 @@ footer > p {
 
 footer > section {
 	width: 50%;
-	color: #ff5642;
-	font-size: 0.8em;
 	padding-left: 3%;
 }
 
+/*// RECHTER ARTIKELS 3% VAN DE KANT //*/
 footer > section:nth-of-type(2), section:nth-of-type(4) {
 	padding-right: 3%;
 }
 
+/*// VERTICALE AFSTAND ARTIKELEN //*/
 footer > section:nth-of-type(3), section:nth-of-type(4) {
 	padding-top: 7%;
 }
 
 /*// ARTIKEL TITELS //*/
-footer > section > h3 {
-	padding-top: 2%;
+footer > section > a {
+	text-decoration: none;
+	color: #ff5642;
+	font-family: 'Playfair Display', serif;
+	font-size: 1em;
+}
+
+/*// STATES VAN DE LINKS //*/
+footer > section > a:active {
+	color: #ef4033;
+}
+
+/*// AFSTAND ARTIKEL EN TITELS //*/
+footer > section > img {
+	padding-bottom: 2%;
 }
 
 
 
+
+
+
+/*///////////////////////////////////////////////// 'ARCHITECTURE' PAGINA ///////////////////////////////////////////////////////////*/
+
+main.page2 {
+	background-color: #F7F3F3;
+}
+
+/*// TEKST ZWART //*/
+main.page2 {
+	color: black;
+}
+
+/*// PLAATSING TEKST LAGER //*/
+main.page2 > article {
+	color: black;
+	padding-top: 40%;
+	padding-bottom: 2%;
+}
+
+main.page2 > article > header > h2 {
+	padding-bottom: 10%;
+}
+
+/*// GROTE PIJL //*/
+main.page2 > section > p:first-of-type {
+	font-size: 4em;
+	padding-left: 7%;
+	padding-top: 0;
+}
+
+/*// PLAATSING LINKS //*/
+main.page2 > section {
+	padding: 0 3% 11%;
+}
+
+/*// STYLING H3 //*/
+main.page2 > section > h3 {
+	padding: 3% 0 5% 0;
+	font-style: italic;
+	font-size: 1.3em;
+}
+
+/*// STYLING LINKS //*/
+main.page2 > section > p:nth-of-type(2) > a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.2em;
+	color: #ff5642;
+}
+
+/*// STATES VAN DE LINKS //*/
+main.page2 > section > p:nth-of-type(2) > a:hover {
+	color: #ff928a;
+}
+
+main.page2 > section > p:nth-of-type(2) > a:active {
+	color: #ef4033;
+}
+
+/*// RECHTER ARTIKELS 3% VAN DE KANT //*/
+footer > section:nth-of-type(6) {
+	padding-right: 3%;
+}
+
+/*// VERTICALE AFSTAND ARTIKELEN //*/
+footer > section:nth-of-type(5), section:nth-of-type(6) {
+	padding-top: 7%;
+}
