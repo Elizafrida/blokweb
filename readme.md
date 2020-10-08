@@ -31,7 +31,7 @@ Deze week ging ik aan de slag met het toevoegen van kleine dingen, het maken van
 **Screenshot(s):**
 
 ![screenshots van hoe ver ik ben](images/Voortgang3-1.JPG)
-![screenshots van hoe ver ik ben](images/Voortgang2-2.JPG)
+![screenshots van hoe ver ik ben](images/Voortgang3-2.JPG)
 
 
 ### Agenda voor meeting
