@@ -24,7 +24,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Deze week ging ik aan de slag met het toevoegen van kleine dingen, het maken van een hamburger menu en het schrijven van javascript. De twee pagina's zijn nu volledig af voor mobiel. Ik ben begonnen met het kijken naar de responsive heid van mijn applicatie en ik wil dit volgende week af maken, door het toevoegen van mediaqueries. Medestudenten hebben mij geholpen met de problemen die ik tegenkwam tijdens het uitklappen van het hamburger menu, dit was erg fijn.
+
+**Screenshot(s):**
+
+![screenshots van hoe ver ik ben](images/voortgang3-1.JPG)
+![screenshots van hoe ver ik ben](images/voortgang2-2.JPG)
+
+
+### Agenda voor meeting
+
+
+
+### Verslag van meeting
+
+Dit zijn de dingen waar ik een vraag over heb:
+- Hoe kan je ervoor zorgen dat de + van een hamburger veranderd in een - wanneer die is geopend?
 
 
 
@@ -32,7 +49,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
-In week 4 kwam ik niet echt toe aan mijn website, wel aan de oefeningen. In week 5 heb ik een flinke inhaalslag gemaakt en enorm veel kunnen doen. De twee pagina's zien er nu goed uit op mobiel. Er zijn nog wat kleine dingen die ik wil toevoegen en ik wil een poging doen tot het responsive maken van de website de komende weken.
+In week 4 kwam ik niet echt toe aan mijn website, wel aan de oefeningen. In week 5 heb ik een flinke inhaalslag gemaakt en enorm veel kunnen doen. De twee pagina's zien er nu goed uit op mobiel. Er zijn nog wat kleine dingen die ik wil toevoegen, zoals een hamburger menu en ik wil een poging doen tot het responsive maken van de website de komende weken.
 
 **Screenshot(s):**
 
