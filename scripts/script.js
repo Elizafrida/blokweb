@@ -3,13 +3,21 @@
 
 
 var plusbutton = document.querySelector("button");
-var plusbuttontekst = '+';
-var minbuttontekst = plusbuttontekst.replace('+', '-');
 var burgermenu = document.querySelector("#uitklapmenu");
+
+//initiële toestand
+hasBeenClicked = true;
 
 function rechtsNaarLinks() {
 	document.body.classList.toggle('active');
-	plusbutton.innerHTML = minbuttontekst;
+
+	if (hasBeenClicked) {
+		plusbutton.innerHTML = '-'
+		hasBeenClicked = false;
+	} else {
+		plusbutton.innerHTML = '+'
+		hasBeenClicked = true;
+	}
 }
 
 plusbutton.addEventListener('click', rechtsNaarLinks);

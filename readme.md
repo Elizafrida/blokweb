@@ -6,7 +6,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
+1. https://whenin.tokyo/
 2. -bron 2-
 3. -...-
 
@@ -36,12 +36,12 @@ Deze week ging ik aan de slag met het toevoegen van kleine dingen, het maken van
 
 ### Agenda voor meeting
 
-
+Dit zijn de dingen waar ik een vraag over heb:
+- Hoe kan je ervoor zorgen dat de + van een hamburger veranderd in een - wanneer die is geopend?
 
 ### Verslag van meeting
 
-Dit zijn de dingen waar ik een vraag over heb:
-- Hoe kan je ervoor zorgen dat de + van een hamburger veranderd in een - wanneer die is geopend?
+Ik ben er achter gekomen hoe ik de + in een - kan veranderen d.m.v. javascript en het veranderen van de innerHTML van een button
 
 
 
@@ -60,15 +60,16 @@ In week 4 kwam ik niet echt toe aan mijn website, wel aan de oefeningen. In week
 ### Agenda voor meeting
 
 Donderdag 1 oktober
-
-### Verslag van meeting
-
 Dit zijn de dingen waar we vragen over hebben:
 - Carrousel (css/html of js, beste optie?)
 - Css image slider animation (Eliza)
 - Text responsive maken- fluid typografie of @mediaQueries?
 :hover bug (Jelle)
 - slider van tekst en dingen toevoegen in winkelmandje (Ysabella)
+
+### Verslag van meeting
+
+De slider animatie zoals ik hem heb: met CSS animaties, is volgens de docent genoeg om het idee weer te geven. Om hem nog daadwerkelijk te laten werken zou ik nog javascript kunnen toevoegen en de keyframe kunnen triggeren als er een class op staat. Ook zou ik kunnen kijken naar de intersectionobserver als ik wil dat de foto's van mijn artikelen omhoog komen wanneer ik ernaartoe scroll.
 
 
 
@@ -77,7 +78,7 @@ Dit zijn de dingen waar we vragen over hebben:
 
 ### Stand van zaken
 
-Het schrijven van de HTML ging best goed, maar toen ik begon met het positioneren van elementen in CSS ben ik het wel erg lastig gaan vinden. Ik vroeg mij af wanneer ik bijvoorbeeld flexbox moest gebruiken en wanneer absoluut positioneren etc. Met de hulp van klasgenoten en goed googlen heb ik uiteindelijk een goed begin kunnen maken aan mijn website. 
+Het schrijven van de HTML ging best goed, maar toen ik begon met het positioneren van elementen in CSS ben ik het wel erg lastig gaan vinden. Ik vroeg mij af wanneer ik bijvoorbeeld flexbox moest gebruiken en wanneer absoluut positioneren etc. Met de hulp van klasgenoten (dingen centraal kunnen positioneren. Met bijvoorbeeld 'transform: translate(-50%, -50%);') en goed googlen heb ik uiteindelijk een goed begin kunnen maken aan mijn website. 
 
 **Screenshot(s):**
 
@@ -88,10 +89,11 @@ Het schrijven van de HTML ging best goed, maar toen ik begon met het positionere
 ### Agenda voor meeting
 
 Woensdag 16 september: van 11:00-16:00 op teams aan het project gewerkt
+We hadden geen agenda gemaakt voor deze week.
 
 ### Verslag van meeting
 
-Met de hulp van mijn klasgenoten heb ik een aantal dingen centraal kunnen positioneren. Met bijvoorbeeld 'transform: translate(-50%, -50%);'
+-
 
 
 
