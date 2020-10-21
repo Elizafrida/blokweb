@@ -150,6 +150,7 @@ nav:first-of-type ul li a {
 	font-family: 'Playfair Display', serif;
 	color: white;
 	font-size: 0.98em;
+	font-size: clamp(0.98em, 3.6vw, 2.2em);
 	line-height: 25px;
 	text-shadow: 0.5px 0.5px 3px #000000;
 }
@@ -159,15 +160,15 @@ body > header:first-of-type > a > img {
 	position: fixed;
 	z-index: 2;
 	width: 2.2em;
-	margin-left: 0.6em;
-	margin-top: 0.35em;
+	margin-left: 0.65em;
+	margin-top: 0.4em;
 }
 
 /*/////////////////////// TWEEDE NAV (HAMBURGER MENU) //////////////////////////*/
 
 /*/// PLAATSING MENU RECHTSBOVEN ///*/
 nav:nth-of-type(2) {
-	padding: 6.5%;
+	padding: 6.5% 6.5% 6.5% 5.2%;
 	position: fixed;
 	right: 0;
 	background-color: white;
@@ -188,27 +189,28 @@ nav:nth-of-type(2) {
 /*/// VERWIJDEREN BULLETS & AFSTAND LINKS ///*/
 nav:nth-of-type(2) ul li {
 	list-style-type: none;
-	padding: 2% 0 8% 0;
+	padding: 2.6% 0 2.6% 0;
 }
 
 /*/// 'HOMEPAGE' PLAATSING ///*/
 nav:nth-of-type(2) ul li:first-of-type {
-	padding-bottom: 14%;
+	padding: 0 0 8.5% 0;
 }
 
 /*/// 'HOMEPAGE' STYLING ///*/
 nav:nth-of-type(2) ul li:first-of-type a {
 	color: black;
-	font-family: 'Karla', sans-serif;
-	font-size: 1em;
 }
 
 /*/// STYLING VAN DE LINKS ///*/
 nav:nth-of-type(2) ul li a {
 	font-size: 1.25em;
+	font-size: clamp(1.25em, 3.6vw, 1.5em);
 	color: #ff5642;
+	color: black;
 	text-decoration: none;
 	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: -0.07em;
 }
 
 nav:nth-of-type(2) ul li a:hover {
@@ -218,12 +220,14 @@ nav:nth-of-type(2) ul li a:hover {
 /*/// BUTTON ///*/
 header:first-of-type button {
 	position: fixed;
-	right: 3%;
+	right: 2.8%;
+	top: -0.7%;
 	z-index: 11;
 	color: #ff5642;
 	font-family: 'Karla', sans-serif;
 	background-color: rgba(0, 0, 0, 0);
-	font-size: 3em;
+	font-size: 3.5em;
+	font-size: clamp(3.5em, 8vw, 7em);
 }
 
 
@@ -241,7 +245,7 @@ header:first-of-type > section:first-of-type > img {
 	position: absolute;
 	width: 80%;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 50.5%;
     left: 50%;
 }
 
@@ -290,6 +294,7 @@ header:first-of-type > section:first-of-type > h1 {
 	position: absolute;
 	font-family: 'Playfair Display', serif;
 	font-size: 3.9em;
+	font-size: clamp(3.9em, 17.5vw, 9em);
 	color: #ffdf00;
 	top: 46%;
 	width: 100%;
@@ -304,7 +309,7 @@ header:first-of-type > section:first-of-type > h1 {
 header:first-of-type > section:first-of-type > h1 > span {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-style: italic;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	letter-spacing: -4px;
 	margin-right: 19%;
 }
@@ -554,10 +559,52 @@ footer > section:nth-of-type(6) {
 
 /*//////////////////////////////////////////////// MEDIAQUERIES /////////////////////////////////////////////////////*/
 
+@media (min-width: 350px) {
+	/* Navigatie plaatsing */
+	nav:first-of-type {
+		left: calc(50% - 9em);
+	}
+	/* Navigatie breedte */
+	nav:first-of-type ul {
+		width: 18em;
+	}
+	/* H1 tekst */
+	header:first-of-type > section:first-of-type > h1 {
+		line-height: 100px;
+		top: 46%;
+	}
+}
+
+
 @media (min-width: 500px) {
 	/* Logo */
 	body > header:first-of-type > a > img {
 		width: 3.3em;
+	}
+	/* Navigatie plaatsing */
+	nav:first-of-type {
+		top: 1.1%;
+		left: calc(50% - 11em);
+	}
+	/* Navigatie breedte */
+	nav:first-of-type ul {
+		width: 22em;
+	}
+	/* Line height links */
+	nav:first-of-type ul li a {
+	    line-height: 41px;
+    }
+	/* Breedte hamburger menu */
+	nav:nth-of-type(2) {
+		padding: 5% 5% 5% 4%;
+	}
+	/* H1 tekst */
+	header:first-of-type > section:first-of-type > h1 {
+		line-height: 120px;
+	}
+	/* Span in H1 tekst */
+	header:first-of-type > section:first-of-type > h1 > span {
+		display: block;
 	}
 }
 
@@ -567,7 +614,30 @@ footer > section:nth-of-type(6) {
 	body > header:first-of-type > a > img {
 		width: 4.4em;
 	}
+	/* Navigatie plaatsing */
+	nav:first-of-type {
+		top: 2.4%;
+		left: calc(50% - 15em);
+	}
+	/* Navigatie breedte */
+	nav:first-of-type ul {
+		width: 30em;
+	}
+	/* Line height links */
+	nav:first-of-type ul li a {
+	    line-height: 46px;
+    }
+	/* Breedte hamburger menu */
+	nav:nth-of-type(2) {
+		width: 75%;
+		padding: 4.4% 4.4% 4.4% 3.5%;
+	}
+	/* H1 tekst */
+	header:first-of-type > section:first-of-type > h1 {
+		line-height: 140px;
+	}
 }
+
 
 @media (min-width: 800px) {
 	/* Logo */
@@ -576,13 +646,59 @@ footer > section:nth-of-type(6) {
 		margin-left: 1em;
 	    margin-top: 0.7em;
 	}
+	/* Navigatie plaatsing */
+	nav:first-of-type {
+		top: 3.8%;
+		left: calc(50% - 17em);
+	}
+	/* Navigatie breedte */
+	nav:first-of-type ul {
+		width: 34em;
+	}
+	/* Line height links */
+	nav:first-of-type ul li a {
+	    line-height: 51px;
+    }
+	/* Breedte hamburger menu */
+	nav:nth-of-type(2) {
+		width: 65%;
+		padding: 3.8% 3.8% 3.8% 3.04%;
+	}
+	/* H1 tekst */
+	header:first-of-type > section:first-of-type > h1 {
+		right: 3%;
+	}
 }
 
 
 @media (min-width: 820px) {
-	/* Alle foto's in articles */
+	/* Flex container */
+	main article {
+		display: flex;
+	    flex-wrap: wrap;
+	    justify-content: flex-end;
+	}
+	/* Tweede artikel links plaatsing */
+	main > a:nth-of-type(2) > article {
+		justify-content: flex-start;
+	}
+	/* Breedte header in articles */
+	main article header {
+		width: 100%;
+		padding-bottom: 3%;
+	}
+	/* Afstand header en foto in article */
 	main article img {
-		width: 800px;
+		padding: 0;
+	}
+	/* Breedte en afstand article tekst */
+	main article p {
+		width: 55%;
+		padding-top: 6%;
+	}
+	/* Niet de tekst boven titel padding */
+	main article header p:first-of-type {
+		padding: 0 0 5% 0;
 	}
 }	
 
@@ -592,6 +708,23 @@ footer > section:nth-of-type(6) {
 	body > header:first-of-type > a > img {
 		width: 6.6em;
 	}
+	/* Navigatie plaatsing */
+	nav:first-of-type {
+		left: calc(50% - 18.5em);
+	}
+	/* Navigatie breedte */
+	nav:first-of-type ul {
+		width: 37em;
+	}
+	/* Breedte hamburger menu */
+	nav:nth-of-type(2) {
+		width: 55%;
+		padding: 3.2% 3.2% 3.2% 2.56%;
+	}
+	/* Breedte foto's in articles */
+	main article img {
+	    width: 940px;
+    }
 }
 
 
@@ -611,18 +744,48 @@ footer > section:nth-of-type(6) {
 	/* Logo */
 	body > header:first-of-type > a > img {
 		width: 7.7em;
-		margin-left: 2em;
-	    margin-top: 1.3em;
+		margin-left: 2.05em;
+	    margin-top: 1.35em;
+	}
+	/* Navigatie plaatsing */
+	nav:first-of-type {
+		left: calc(50% - 22.5em);
+	}
+	/* Navigatie breedte */
+	nav:first-of-type ul {
+		width: 45em;
+	}
+	/* Line height links */
+	nav:first-of-type ul li a {
+	    line-height: 55px;
+    }
+	/* Breedte hamburger menu */
+	nav:nth-of-type(2) {
+		width: 45%;
+		padding: 2.6% 2.6% 2.6% 2.08%;
 	}
 }
 
 
 @media (min-width: 1250px) {
+	/* Breedte hamburger menu */
+	nav:nth-of-type(2) {
+		width: 40%;
+		padding: 2% 2% 2% 1.6%;
+	}
 	/* Logo */
 	body > header:first-of-type > a > img {
 		width: 8.8em;
 		margin-left: 3em;
 	    margin-top: 1.9em;
+	}
+	/* Navigatie plaatsing */
+	nav:first-of-type {
+		left: calc(50% - 26.25em);
+	}
+	/* Navigatie breedte */
+	nav:first-of-type ul {
+		width: 52.5em;
 	}
 	/* Slider images & Eerste aside */
 	header:first-of-type > section:first-of-type > img, main > aside:first-of-type > img {
@@ -632,15 +795,33 @@ footer > section:nth-of-type(6) {
 	main > aside:nth-of-type(2) > img {
 		width: 950px;
 	}
+	/* H1 tekst */
+	header:first-of-type > section:first-of-type > h1 {
+		line-height: 255px;
+		top: 43%;
+	}
 }
 
 
 @media (min-width: 1400px) {
+	/* Breedte hamburger menu */
+	nav:nth-of-type(2) {
+		width: 35%;
+		padding: 1.7% 1.7% 1.7% 1.36%;
+	}
 	/* Logo */
 	body > header:first-of-type > a > img {
-		width: 9.9em;
-		margin-left: 3em;
-	    margin-top: 1.9em;
+		width: 12em;
+		margin-left: 3.3em;
+	    margin-top: 2.2em;
+	}
+	/* Navigatie plaatsing */
+	nav:first-of-type {
+		left: calc(50% - 27.5em);
+	}
+	/* Navigatie breedte */
+	nav:first-of-type ul {
+		width: 55em;
 	}
 	/* Slider images & Eerste aside */
 	header:first-of-type > section:first-of-type > img, main > aside:first-of-type > img {
@@ -650,16 +831,43 @@ footer > section:nth-of-type(6) {
 	main > aside:nth-of-type(2) > img {
 		width: 1050px;
 	}
-	/* Footer foto's */
-	footer > section {
+	/* Footer foto's maximale breedte */
+	/*footer > section {
 		width: 680px; 
-	}
-	footer > section:nth-of-type(2), footer > section:nth-of-type(3) {
+	}*/
+	footer > section {
+		min-width: 680px; 
+		max-width: 828px;
 		padding-right: 0;
+		padding-left: 2.2%;
+	}
+	/* Verwijderen rand rechts */
+	/*footer > section:nth-of-type(2), footer > section:nth-of-type(3) {
+		padding-right: 0;
+	}*/
+	footer > section:nth-of-type(3) {
+		padding-right: 0;
+	}
+	/* Rand onderkant website */
+	footer > section:nth-of-type(4) {
+		padding-bottom: 10%;
 	}
 }
 
+
 @media (min-width: 1550px) {
+	/* Navigatie plaatsing */
+	nav:first-of-type {
+		left: calc(50% - 30em);
+	}
+	/* Navigatie breedte */
+	nav:first-of-type ul {
+		width: 60em;
+	}
+	/* Breedte hamburger menu */
+	nav:nth-of-type(2) {
+		width: 32%;
+	}
 	/* Tweede aside */	
 	main > aside:nth-of-type(2) > img {
 		width: 1220px;
@@ -668,20 +876,67 @@ footer > section:nth-of-type(6) {
 
 
 @media (min-width: 1700px) {
+	/* Breedte hamburger menu */
+	nav:nth-of-type(2) {
+		width: 29%;
+		padding: 1.4% 1.4% 1.4% 1.12%;
+	}
 	/* Tweede aside */	
 	main > aside:nth-of-type(2) > img {
 		width: 1400px;
+	}
+	/* Plaatsing header in eerste en derde article */
+	main > a:first-of-type > article > header, main > a:nth-of-type(3) > article > header {
+		padding: 0 0 2% 55%;
+	}
+	/* Plaatsing header in tweede article */
+	main > a:nth-of-type(2) > article > header {
+		padding: 0 42% 2% 30%;
+	}
+	/* Afstand article tekst van de randen */
+	main article p {
+		width: 35%;
+		padding: 0 0 0 2%;
+	}
+}
+
+
+@media (min-width: 1850px) {
+	/* Navigatie plaatsing */
+	nav:first-of-type {
+		left: calc(50% - 45em);
+	}
+	/* Navigatie breedte */
+	nav:first-of-type ul {
+		width: 90em;
 	}
 }
 
 
 @media (min-width: 2040px) {
-	/* Footer foto's */
+	/* Breedte hamburger menu */
+	nav:nth-of-type(2) {
+		width: 20%;
+	}
+	/* Footer foto's geen ruimte boven 3e en 4e foto */
 	footer > section:nth-of-type(3), footer > section:nth-of-type(4) {
 		padding-top: 0;
 	}
-	footer > section > a {
-		padding: 0;
+	/* Minder verticale afstand artikelen */
+	footer > section:first-of-type, footer > section:nth-of-type(2), footer > section:nth-of-type(3) {
+		padding-bottom: 7%;
+	}
+    /* Verwijderen rand rechts */
+	footer > section:nth-of-type(2) {
+		padding-right: 0;
+	}
+	/* Architecture pagina footer */
+	.footer2 > section:nth-of-type(4) {
+		padding-top: 7%;
+	}
+	/* Minder verticale afstand artikelen */
+	.footer2 > section:first-of-type, footer > section:nth-of-type(2), footer > section:nth-of-type(3) {
+		padding-bottom: 2%;
 	}
 }
 
