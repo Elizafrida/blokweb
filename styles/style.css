@@ -30,7 +30,8 @@ a:active {
 
 main p {
 	font-size: 0.96em;
-	line-height: 1.4;
+	font-size: clamp(0.96em, 3vw, 1.58em);
+	line-height: 1.6;
 }
 
 main p span {
@@ -42,6 +43,7 @@ main p span {
 h2 {
 	font-family: 'Playfair Display', serif;
 	font-size: 3.25em;
+	font-size: clamp(3.25em, 12vw, 7em);
 	line-height: 1.03;
 }
 
@@ -118,7 +120,7 @@ main.page2 > article > header > p {
 /*/// PLAATSING NAV BOVEN & MIDDEN ///*/
 nav:first-of-type {
 	position: fixed;
-	z-index: 2;
+	z-index: 15;
 	margin-top: 0.35em;
 	top: 0.47em;
 	left: calc(50% - 8.5em);
@@ -175,7 +177,7 @@ nav:nth-of-type(2) {
 	width: 80%;
 	height: 100vh;
 	z-index: 10;
-	box-shadow: -15px 0 15px rgba(0, 0, 0, 0.1);
+	box-shadow: -12px 0 15px rgba(0, 0, 0, 0.09);
 	transform: translateX(100%);
 	transition: 0.4s;
 	transition-timing-function: ease-in-out;
@@ -330,7 +332,7 @@ main > aside > img {
 	position: absolute;
 	width: 80%;
 	transform: translate(-50%, -50%);
-	top: 47%;
+	top: 45%;
 	left: 50%;
 }
 
@@ -339,7 +341,8 @@ main > aside > img {
 /*// TEKST EERSTE ASIDE //*/
 main > aside:first-of-type > p {
 	position: absolute;
-	font-size: 2.9em;
+	font-size: 3.2em;
+	font-size: clamp(3.2em, 11vw, 6.5em);
 	letter-spacing: -2px;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-style: italic;
@@ -354,7 +357,8 @@ main > aside:first-of-type > p {
 main > aside:first-of-type > p > a {
 	display: block;
 	text-decoration: none;
-	font-size: 0.82em;
+	font-size: 0.4em;
+	font-size: clamp(0.4em, 11vw, 1.3em);
 	letter-spacing: 0.5px;
 	color: white;
 	font-family: 'Playfair Display', serif;
@@ -388,12 +392,14 @@ main > aside:first-of-type > p > a:active {
 main > aside:nth-of-type(2) > p {
 	position: absolute;
 	font-size: 3.14em;
+	font-size: clamp(3.14em, 8vw, 6em);
 	letter-spacing: -2px;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #ffdf00;
 	width: 100%;
 	text-align: center;
 	top: 27%;
+	top: clamp(27%, 19vw, 80%);
 	line-height: 0.88;
 	text-shadow: 0.5px 0 1px #000000;
 }
@@ -405,6 +411,7 @@ main > aside:nth-of-type(2) > p > a {
 	color: white;
 	font-family: 'Playfair Display', serif;
 	font-size: 2.06em;
+	font-size: clamp(2.06em, 10vw, 2.28em);
 	padding-bottom: 31%;
 }
 
@@ -434,6 +441,7 @@ footer > p {
 	padding: 0 0 4% 3%;
 	color: black;
 	width: 100%;
+	font-size: clamp(0.96em, 4vw, 1.58em);
 }
 
 footer > section {
@@ -458,6 +466,7 @@ footer > section > a {
 	color: #ff5642;
 	font-family: 'Playfair Display', serif;
 	font-size: 1em;
+	font-size: clamp(1.1em, 2.5vw, 1.9em);
 }
 
 /*// STATES VAN DE LINKS //*/
@@ -518,6 +527,7 @@ main.page2 > section > h3 {
 	padding: 3% 0 5% 0;
 	font-style: italic;
 	font-size: 1.3em;
+	font-size: clamp(1.3em, 3vw, 2.5em);
 }
 
 /*// STYLING LINKS //*/
@@ -525,6 +535,7 @@ main.page2 > section > p:nth-of-type(2) > a {
 	text-decoration: none;
 	color: black;
 	font-size: 1.2em;
+	font-size: clamp(1.2em, 3vw, 1.55em);
 	color: #ff5642;
 }
 
@@ -606,6 +617,18 @@ footer > section:nth-of-type(6) {
 	header:first-of-type > section:first-of-type > h1 > span {
 		display: block;
 	}
+	/* Tweede aside 'explore Tokyo's minder laag */
+	main > aside:nth-of-type(2) > p > a {
+	    padding-bottom: 20%;
+    }
+    /* Minder grote blokken van de articles */
+    main > a > article {
+	padding: 16.5% 3%;
+    }
+    /* Minder grote blokken van asides */
+    main > aside {
+	height: 101vh;
+    }
 }
 
 
@@ -636,6 +659,26 @@ footer > section:nth-of-type(6) {
 	header:first-of-type > section:first-of-type > h1 {
 		line-height: 140px;
 	}
+	/* Tweede aside 'explore Tokyo's minder laag */
+	main > aside:nth-of-type(2) > p > a {
+	    padding-bottom: 15%;
+    }
+    /* Grote pijl pagina 2 */
+    main.page2 > section > p:first-of-type {
+	font-size: 5em;
+    }
+    /* Hogere plaatsing tekst pagina 2 */
+    main.page2 > article {
+	padding-top: 39%;
+    }
+    /* Minder grote blokken van de articles */
+    main > a > article {
+	padding: 15.5% 3%;
+    }
+    /* Minder grote blokken van asides */
+    main > aside {
+	height: 100vh;
+    }
 }
 
 
@@ -668,6 +711,26 @@ footer > section:nth-of-type(6) {
 	header:first-of-type > section:first-of-type > h1 {
 		right: 3%;
 	}
+	/* Tweede aside 'explore Tokyo's minder laag */
+	main > aside:nth-of-type(2) > p > a {
+	    padding-bottom: 10%;
+    }
+    /* Grote pijl pagina 2 */
+    main.page2 > section > p:first-of-type {
+	font-size: 6em;
+    }
+    /* Hogere plaatsing tekst pagina 2 */
+    main.page2 > article {
+	padding-top: 37%;
+    }
+    /* Minder grote blokken van de articles */
+    main > a > article {
+	padding: 15% 3%;
+    }
+    /* Minder grote blokken van asides */
+    main > aside {
+	height: 99vh;
+    }
 }
 
 
@@ -677,6 +740,10 @@ footer > section:nth-of-type(6) {
 		display: flex;
 	    flex-wrap: wrap;
 	    justify-content: flex-end;
+	}
+	/* Plaatsing artikel links pagina 2 */
+	main.page2 article {
+		display: block;
 	}
 	/* Tweede artikel links plaatsing */
 	main > a:nth-of-type(2) > article {
@@ -695,6 +762,11 @@ footer > section:nth-of-type(6) {
 	main article p {
 		width: 55%;
 		padding-top: 6%;
+	}
+	/* Andere breedte en afstand article pagina 2 */
+	main.page2 article p {
+		width: 100%;
+		padding-top: 0;
 	}
 	/* Niet de tekst boven titel padding */
 	main article header p:first-of-type {
@@ -724,6 +796,30 @@ footer > section:nth-of-type(6) {
 	/* Breedte foto's in articles */
 	main article img {
 	    width: 940px;
+    }
+    /* breedte article pagina 2 */
+	main.page2 article p {
+		width: 80%;
+	}
+    /* Tweede aside 'explore Tokyo's minder laag */
+	main > aside:nth-of-type(2) > p > a {
+	    padding-bottom: 5%;
+    }
+    /* Grote pijl pagina 2 */
+    main.page2 > section > p:first-of-type {
+	font-size: 7em;
+    }
+    /* Hogere plaatsing tekst pagina 2 */
+    main.page2 > article {
+	padding-top: 35%;
+    }
+    /* Minder grote blokken van de articles */
+    main > a > article {
+	padding: 14.5% 3%;
+    }
+    /* Minder grote blokken van asides */
+    main > aside {
+	height: 98vh;
     }
 }
 
@@ -764,6 +860,42 @@ footer > section:nth-of-type(6) {
 		width: 45%;
 		padding: 2.6% 2.6% 2.6% 2.08%;
 	}
+	/* breedte article pagina 2 */
+	main.page2 article p {
+		width: 65%;
+	}
+	/* Geen afstand pijl en header pagina 2 */
+	main.page2 article header {
+		width: 80%;
+	}
+	/* Eerste Aside 'Follow Us' */
+	main > aside:first-of-type > p {
+		top: 37%;
+	}
+	/* H1 tekst span 'Anew' */
+	header:first-of-type > section:first-of-type > h1 > span {
+		margin-right: 25%;
+	}
+	/* Tweede aside 'explore Tokyo's minder laag */
+	main > aside:nth-of-type(2) > p > a {
+	    padding-bottom: 3%;
+    }
+    /* Omhoogplaatsen van architecten pagina 2 */
+	main.page2 > section > h3 {
+	padding: 3% 0 2% 0;
+    }
+    /* Hogere plaatsing tekst pagina 2 */
+    main.page2 > article {
+	padding-top: 33%;
+    }
+    /* Minder grote blokken van de articles */
+    main > a > article {
+	padding: 14% 3%;
+    }
+    /* Minder grote blokken van asides */
+    main > aside {
+	height: 97vh;
+    }
 }
 
 
@@ -800,6 +932,30 @@ footer > section:nth-of-type(6) {
 		line-height: 255px;
 		top: 43%;
 	}
+	/* H1 tekst span 'Anew' */
+	header:first-of-type > section:first-of-type > h1 > span {
+		margin-right: 30%;
+	}
+	/* Eerste Aside 'Follow Us' */
+	main > aside:first-of-type > p {
+		top: 39%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		margin-left: -3.2%;
+	}
+	/* Tweede aside 'explore Tokyo's minder laag */
+	main > aside:nth-of-type(2) > p > a {
+	    padding-bottom: 2%;
+    }
+    /* Hogere plaatsing tekst pagina 2 */
+    main.page2 > article {
+	padding-top: 31%;
+    }
+    /* Minder grote blokken van asides */
+    main > aside {
+	height: 96vh;
+    }
 }
 
 
@@ -831,6 +987,11 @@ footer > section:nth-of-type(6) {
 	main > aside:nth-of-type(2) > img {
 		width: 1050px;
 	}
+	/* H1 tekst span 'Anew' */
+	header:first-of-type > section:first-of-type > h1 > span {
+		margin-right: 35%;
+		margin-top: 0.25%;
+	}
 	/* Footer foto's maximale breedte */
 	/*footer > section {
 		width: 680px; 
@@ -852,6 +1013,14 @@ footer > section:nth-of-type(6) {
 	footer > section:nth-of-type(4) {
 		padding-bottom: 10%;
 	}
+	/* Tweede aside 'explore Tokyo's minder laag */
+	main > aside:nth-of-type(2) > p > a {
+	    padding-bottom: 1%;
+    }
+    /* Hogere plaatsing tekst pagina 2 */
+    main.page2 > article {
+	padding-top: 28%;
+    }
 }
 
 
@@ -872,8 +1041,53 @@ footer > section:nth-of-type(6) {
 	main > aside:nth-of-type(2) > img {
 		width: 1220px;
 	}
+	/* H1 tekst span 'Anew' */
+	header:first-of-type > section:first-of-type > h1 > span {
+		margin-right: 40%;
+		margin-top: 0.5%;
+	}
+	/* Hogere plaatsing tekst pagina 2 */
+    main.page2 > article {
+	padding-top: 25%;
+    }
+    /* Minder grote blokken van de articles */
+    main > a > article {
+	padding: 12% 3%;
+    }
+    /* Minder grote blokken van asides */
+    main > aside {
+	height: 95vh;
+    }
 }
 
+@media (min-width: 1620px) {
+	/* Plaatsing artikel links pagina 2 */
+	main.page2 article {
+		display: flex;
+	    flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	/* Minder brede header pagina 2 */
+	main.page2 article header {
+		width: 42%;
+	}
+	/* Minder brede article tekst pagina 2 */
+	main.page2 article p {
+		width: 33%;
+	}
+	/* Omhoogplaatsen van architecten pagina 2 */
+	main.page2 > section > h3 {
+	padding: 3% 0 4% 0;
+    }
+    /* Geen afstand pijl en header pagina 2 */
+	main.page2 article header {
+		padding-bottom: 0;
+	}
+	/* Geen afstand pijl en header pagina 2 */
+	main.page2 article header h2 {
+		padding-bottom: 0;
+	}
+}
 
 @media (min-width: 1700px) {
 	/* Breedte hamburger menu */
@@ -887,17 +1101,25 @@ footer > section:nth-of-type(6) {
 	}
 	/* Plaatsing header in eerste en derde article */
 	main > a:first-of-type > article > header, main > a:nth-of-type(3) > article > header {
-		padding: 0 0 2% 55%;
+		padding: 0 0 2% 57%;
 	}
 	/* Plaatsing header in tweede article */
 	main > a:nth-of-type(2) > article > header {
-		padding: 0 42% 2% 30%;
+		padding: 0 30% 2% 30%;
 	}
 	/* Afstand article tekst van de randen */
 	main article p {
-		width: 35%;
+		width: 39%;
 		padding: 0 0 0 2%;
 	}
+    /* Hogere plaatsing tekst pagina 2 */
+    main.page2 > article {
+	padding-top: 22%;
+    }
+    /* Minder grote blokken van de articles */
+    main > a > article {
+	padding: 10% 3%;
+    }
 }
 
 
@@ -910,6 +1132,14 @@ footer > section:nth-of-type(6) {
 	nav:first-of-type ul {
 		width: 90em;
 	}
+	/* Hogere plaatsing tekst pagina 2 */
+    main.page2 > article {
+	padding-top: 19%;
+    }
+    /* Minder grote blokken van de articles */
+    main > a > article {
+	padding: 8% 3%;
+    }
 }
 
 
@@ -938,6 +1168,18 @@ footer > section:nth-of-type(6) {
 	.footer2 > section:first-of-type, footer > section:nth-of-type(2), footer > section:nth-of-type(3) {
 		padding-bottom: 2%;
 	}
+	/* Hogere plaatsing tekst pagina 2 */
+    main.page2 > article {
+	padding-top: 16%;
+    }
+    /* Minder grote blokken van de articles */
+    main > a > article {
+	padding: 6% 3%;
+    }
+    /* Minder grote blokken van asides */
+    main > aside {
+	height: 92vh;
+    }
 }
 
 
