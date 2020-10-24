@@ -1,24 +1,39 @@
 # Procesverslag
 **Auteur:** Eliza Frida van Binnendijk
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
+
 
 
 
 ## Bronnenlijst
 1. https://whenin.tokyo/
-2. -bron 2-
-3. -...-
+2. https://cssanimation.rocks/animating-links/
+3. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+De dingen die goed gingen:
+- Gebruiken van Keyframes voor CSS animaties
+- Flexbox gebruiken (Vond ik voorheen erg lastig)
+- de HTML schrijven
+- Standaard CSS opmaak
+
+De dingen die lastig waren:
+- Responsive maken van de website: 
+  > Foto's op vershillende schermgroottes het juiste formaat en de juiste plek geven 
+  > Typografie die mooi meeschaalt en op veranderende plekken staat (zoals op de orginele website) 
+- Het gebruiken van Pseudo-classes
+- Alle verschillende manieren waarop je een element kunt positioneren op een website
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+![screenshots van hoe ver ik ben](images/Voortgang4-1.png)
+![screenshots van hoe ver ik ben](images/Voortgang4-2.png)
+![screenshots van hoe ver ik ben](images/Voortgang4-3.png)
+![screenshots van hoe ver ik ben](images/Voortgang4-4.png)
+![screenshots van hoe ver ik ben](images/Voortgang4-5.png)
 
 
 

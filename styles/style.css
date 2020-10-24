@@ -20,13 +20,48 @@ p {
 	font-family: 'Karla', sans-serif;
 }
 
+
+a {
+	position: relative;
+	text-decoration: none;
+}
+
+a::after {
+	border-bottom: 0.085em solid #ff5642;
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 100%;
+	bottom: 0;
+	transition: right 0.45s ease-out;
+}
+
+a:hover::after {
+	right: 0;
+}
+
 a:hover {
 	color: #ff928a;
 }
 
 a:active {
-	color: #ff5642;
+	color: #c47f78;
 }
+
+a:focus {
+	border: 0.11em dotted #ffa49c;
+	border-radius: 0.4em;
+	padding-bottom: 0.2em;
+	transition: 0.55s;
+}
+
+/*
+a:visited {
+	color: grey;
+}
+*/
+
 
 main p {
 	font-size: 0.96em;
@@ -157,6 +192,16 @@ nav:first-of-type ul li a {
 	text-shadow: 0.5px 0.5px 3px #000000;
 }
 
+/*/// STATES VAN DE LINKS ///*/
+nav:first-of-type ul li a:active {
+	color: #c47f78;
+	text-shadow: none;
+}
+
+nav:first-of-type ul li a:hover {
+	color: #ffe5e3;
+}
+
 /*/// LOGO PLAATSING ///*/
 body > header:first-of-type > a > img {
 	position: fixed;
@@ -181,6 +226,7 @@ nav:nth-of-type(2) {
 	transform: translateX(100%);
 	transition: 0.4s;
 	transition-timing-function: ease-in-out;
+	z-index: 16;
 }
 
 /*/// IN EN UITKLAPPEN MENU ///*/
@@ -215,16 +261,24 @@ nav:nth-of-type(2) ul li a {
 	letter-spacing: -0.07em;
 }
 
-nav:nth-of-type(2) ul li a:hover {
-	color: #ff928a;
-}	
+/* /// STATES VAN DE LINKS /// */
+nav:nth-of-type(2) ul li a:active {
+	color: #c47f78;
+}
+
+nav:nth-of-type(2) ul li a:focus {
+	border: 0.15em dotted #ffa49c;
+	border-radius: 0.4em;
+	padding-bottom: 0.2em;
+	transition: 0.55s;
+}
 
 /*/// BUTTON ///*/
 header:first-of-type button {
 	position: fixed;
 	right: 2.8%;
 	top: -0.7%;
-	z-index: 11;
+	z-index: 17;
 	color: #ff5642;
 	font-family: 'Karla', sans-serif;
 	background-color: rgba(0, 0, 0, 0);
@@ -382,9 +436,18 @@ main > aside:first-of-type > p > a:hover {
 	color: #ff928a;
 }
 
-main > aside:first-of-type > p > a:active {
-	color: #ef4033;
+main > aside:first-of-type > p > a:hover::after {
+	right: 100%;
 }
+
+main > aside:first-of-type > p > a:active {
+	color: #c47f78;
+}
+
+main > aside:first-of-type > p > a:focus {
+	padding: 0.04em 0.04em 0 0.04em;
+}
+
 
 /*//////////////////////////// TWEEDE ASIDE /////////////////////////////*/
 
@@ -420,8 +483,17 @@ main > aside:nth-of-type(2) > p > a:hover {
 	color: #ff928a;
 }
 
+main > aside:nth-of-type(2) > p > a:hover::after {
+	right: 100%;
+}
+
 main > aside:nth-of-type(2) > p > a:active {
-	color: #ef4033;
+	color: #c47f78;
+}
+
+main > aside:nth-of-type(2) > p > a:focus {
+	padding-bottom: 0.27em;
+	border: 0.07em dotted #ffa49c;
 }
 
 
@@ -470,9 +542,9 @@ footer > section > a {
 }
 
 /*// STATES VAN DE LINKS //*/
-footer > section > a:active {
+/*footer > section > a:active {
 	color: #ef4033;
-}
+}*/	
 
 /*// AFSTAND ARTIKEL EN TITELS //*/
 footer > section > img {
@@ -545,7 +617,7 @@ main.page2 > section > p:nth-of-type(2) > a:hover {
 }
 
 main.page2 > section > p:nth-of-type(2) > a:active {
-	color: #ef4033;
+	color: #c47f78;
 }
 
 /*// RECHTER ARTIKELS 3% VAN DE KANT //*/
