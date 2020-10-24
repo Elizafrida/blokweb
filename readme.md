@@ -22,8 +22,8 @@ De dingen die goed gingen:
 
 De dingen die lastig waren:
 - Responsive maken van de website: 
-  > Foto's op vershillende schermgroottes het juiste formaat en de juiste plek geven 
-  > Typografie die mooi meeschaalt en op veranderende plekken staat (zoals op de orginele website) 
+  - Foto's op vershillende schermgroottes het juiste formaat en de juiste plek geven 
+  - Typografie die mooi meeschaalt en op veranderende plekken staat (zoals op de orginele website) 
 - Het gebruiken van Pseudo-classes
 - Alle verschillende manieren waarop je een element kunt positioneren op een website
 
